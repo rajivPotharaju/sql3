@@ -1,0 +1,34 @@
+create database instagram;
+use instagram;
+create table message(mformat varchar(20),mfrom varchar(20),m_id int primary key);
+insert into message values("text","ramu",111);
+insert into message values("text","ravi",222);
+insert into message values("text","ram",333);
+insert into message values("text","raju",444);
+insert into message values("text","ramesh",555);
+select * from message;
+
+create table stories(sperson varchar(22),smention varchar(12));
+insert into stories value("ramu","ravi");
+insert into stories value("rani","roja");
+insert into stories value("ram","ravi");
+insert into stories value("ramesh","ravi");
+insert into stories value("rakesh","ravi");
+select * from stories;
+
+create table posts(pname varchar(24),plikes int);
+insert into posts values("ram",111);
+insert into posts values("ravi",99);
+insert into posts values("ramesh",31);
+insert into posts values("rani",51);
+insert into posts values("remo",141);
+select * from posts;
+
+
+create  table users(uname varchar(19),upassword varchar(10));
+insert into users values("ramu","123@ram");
+insert into users values("ravi","111111");
+insert into users values("raj","raj20");
+insert into users values("remou","amemo");
+insert into users values("rakesh","passrak");
+select * from users;
